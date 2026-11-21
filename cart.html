@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Selection | AURÉVIA Shopping Cart</title>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Section 1: Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AURÉVIA</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Our Chocolates</a>
+                <a href="#">Gift Collections</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="nav-icons">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="cart.html" class="cart-icon"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></a>
+                <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 2: Cart Header -->
+        <section class="cart-header section-padding">
+            <div class="container">
+                <h1 class="reveal-text">Your Chocolate Selection</h1>
+                <p>A curated collection of your finest choices, ready for elegant preparation.</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Cart Content -->
+        <section class="cart-content-section section-padding">
+            <div class="container" id="cart-main-container">
+                <!-- Cart Items and Summary will be injected here by JS -->
+                <div class="cart-layout" id="cart-active-state">
+                    <div class="cart-items-list" id="cart-items-container">
+                        <!-- Items injected here -->
+                    </div>
+
+                    <div class="cart-summary-sidebar">
+                        <div class="summary-card">
+                            <h3>Order Summary</h3>
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span id="subtotal-amount">$0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span id="shipping-amount">$15.00</span>
+                            </div>
+                            <div class="summary-row promo-row">
+                                <input type="text" id="promo-code" placeholder="Promo Code">
+                                <button id="apply-promo">Apply</button>
+                            </div>
+                            <div class="summary-row total-row">
+                                <span>Total</span>
+                                <span id="grand-total-amount">$0.00</span>
+                            </div>
+                            <button class="btn-primary w-full checkout-btn">Proceed to Checkout</button>
+                            <a href="shop.html" class="continue-shopping">Continue Shopping</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4: Empty Cart State -->
+                <div id="cart-empty-state" style="display: none;">
+                    <div class="empty-cart-content">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <h2>Your cart is currently as empty as an unopened box.</h2>
+                        <p>Discover our exquisite collections and find your perfect treat.</p>
+                        <a href="shop.html" class="btn-gold">Explore Chocolates</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Section 10: Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">AURÉVIA</a>
+                    <p>Where Every Bite Becomes a Luxury. Experience the world's finest artisanal chocolates.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Our Chocolates</a></li>
+                        <li><a href="#">Gift Collections</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> 123 Luxury Lane, Cocoa City</p>
+                    <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fa-solid fa-envelope"></i> contact@aurevia.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AURÉVIA Premium Chocolates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

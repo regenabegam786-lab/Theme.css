@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Collection | AURÉVIA Premium Chocolates</title>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Section 1: Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AURÉVIA</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html" class="active">Our Chocolates</a>
+                <a href="#">Gift Collections</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="nav-icons">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#" class="cart-icon"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></a>
+                <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero Banner -->
+        <section class="shop-hero">
+            <div class="container">
+                <h1 class="reveal-text">The Collection</h1>
+                <p class="reveal-text">Explore our curated selection of world-class chocolates.</p>
+            </div>
+        </section>
+
+        <!-- Section 2 & 3: Category Nav & Product Grid -->
+        <section class="shop-container section-padding">
+            <div class="container">
+                <!-- Category Navigation / Filters -->
+                <div class="shop-filters">
+                    <div class="categories">
+                        <button class="filter-btn active" data-category="all">All Chocolates</button>
+                        <button class="filter-btn" data-category="dark">Dark</button>
+                        <button class="filter-btn" data-category="milk">Milk</button>
+                        <button class="filter-btn" data-category="truffles">Truffles</button>
+                        <button class="filter-btn" data-category="gifts">Gift Sets</button>
+                    </div>
+                    <div class="sort-options">
+                        <select id="sort-select">
+                            <option value="default">Sort By: Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Top Rated</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="product-grid shop-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-category="truffles">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1526081347589-7fa3cb41b4b2?auto=format&fit=crop&q=80&w=500" alt="Velvet Truffle">
+                        </div>
+                        <h3 class="product-title">Velvet Truffle</h3>
+                        <p class="product-desc">Silky smooth dark chocolate ganache.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$24.00</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <button class="btn-primary w-full">Add to Cart</button>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card" data-category="milk">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1542843137-8791a50c42e1?auto=format&fit=crop&q=80&w=500" alt="Golden Praline">
+                        </div>
+                        <h3 class="product-title">Golden Praline</h3>
+                        <p class="product-desc">Crunchy hazelnut filled milk chocolate.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$28.00</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-half-stroke"></i>
+                            </div>
+                        </div>
+                        <button class="btn-primary w-full">Add to Cart</button>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card" data-category="dark">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?auto=format&fit=crop&q=80&w=500" alt="Midnight Salt">
+                        </div>
+                        <h3 class="product-title">Midnight Salt</h3>
+                        <p class="product-desc">Sea salt infused 85% dark chocolate.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$22.00</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <button class="btn-primary w-full">Add to Cart</button>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card" data-category="gifts">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1614088685112-0a760b71a3c8?auto=format&fit=crop&q=80&w=500" alt="Rose Petal Box">
+                        </div>
+                        <h3 class="product-title">Rose Petal Box</h3>
+                        <p class="product-desc">Delicate floral notes in white chocolate.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$32.00</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        <button class="btn-primary w-full">Add to Cart</button>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="product-card" data-category="dark">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&q=80&w=500" alt="Espresso Dark">
+                        </div>
+                        <h3 class="product-title">Espresso Dark</h3>
+                        <p class="product-desc">Single-origin beans meet 70% cocoa.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$26.00</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <button class="btn-primary w-full">Add to Cart</button>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="product-card" data-category="truffles">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1548907040-4baa42d10919?auto=format&fit=crop&q=80&w=500" alt="Honey Lavender">
+                        </div>
+                        <h3 class="product-title">Honey Lavender</h3>
+                        <p class="product-desc">Floral honey-infused white chocolate.</p>
+                        <div class="product-meta">
+                            <span class="product-price">$25.00</span>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <button class="btn-primary w-full">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Promotional Banner -->
+        <section class="promo-banner">
+            <div class="container">
+                <div class="promo-content">
+                    <span class="promo-tag">LIMITED EDITION</span>
+                    <h2>Autumn Gold Collection</h2>
+                    <p>Experience the warmth of spiced caramel and roasted pecans.</p>
+                    <a href="#" class="btn-gold">Explore the Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Gift Box Showcase -->
+        <section class="gift-showcase section-padding">
+            <div class="container">
+                <div class="showcase-flex">
+                    <div class="showcase-content">
+                        <h2 class="section-title" style="text-align: left;">The Ultimate Unboxing</h2>
+                        <p>Our Signature Gift Boxes are more than just a collection of chocolates. Each box is hand-wrapped in silk-touch paper, secured with a gold-embossed ribbon, and includes a personalized wax-sealed note.</p>
+                        <ul class="showcase-list">
+                            <li><i class="fa-solid fa-check"></i> Hand-picked selection of 24 pieces</li>
+                            <li><i class="fa-solid fa-check"></i> Premium textured velvet box</li>
+                            <li><i class="fa-solid fa-check"></i> Personalized calligraphy message</li>
+                        </ul>
+                        <button class="btn-primary">View Gift Boxes</button>
+                    </div>
+                    <div class="showcase-image">
+                        <img src="https://images.unsplash.com/photo-1582176604856-e8024976798e?auto=format&fit=crop&q=80&w=800" alt="Luxury Unboxing">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Section 6: Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">AURÉVIA</a>
+                    <p>Where Every Bite Becomes a Luxury. Experience the world's finest artisanal chocolates.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Our Chocolates</a></li>
+                        <li><a href="#">Gift Collections</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> 123 Luxury Lane, Cocoa City</p>
+                    <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fa-solid fa-envelope"></i> contact@aurevia.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AURÉVIA Premium Chocolates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+
+/* =========================================
+   ROYAL CHOCOLATE - DESIGN TOKENS
+   Premium Luxury E-commerce Website
+========================================= */
+
+:root {
+
+  /* 1. COLOR PALETTE */
+
+  --color-primary: #2B1712;
+  --color-secondary: #4A261D;
+  --color-accent: #C49A52;
+
+  --color-background: #F4EBDD;
+  --color-surface: #FFFFFF;
+  --color-surface-soft: #EFE3D2;
+
+  --color-text-primary: #2B1712;
+  --color-text-secondary: #75645A;
+  --color-text-light: #FFFFFF;
+  --color-text-muted: #A99A8D;
+
+  --color-border: #E5D8C7;
+  --color-border-dark: #B58A57;
+
+  --color-success: #527B52;
+  --color-danger: #A83232;
+
+
+  /* 2. TYPOGRAPHY */
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 22px;
+  --font-size-xl: 32px;
+  --font-size-2xl: 40px;
+  --font-size-3xl: 56px;
+  --font-size-hero: 64px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 1px;
+  --letter-spacing-luxury: 3px;
+
+
+  /* 3. SPACING */
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+
+  /* 4. BORDER */
+
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+
+  --border-color: var(--color-border);
+  --border-color-accent: var(--color-accent);
+
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+
+
+  /* 5. SHADOWS */
+
+  --shadow-soft:
+    0 4px 15px rgba(43, 23, 18, 0.06);
+
+  --shadow-card:
+    0 8px 25px rgba(43, 23, 18, 0.10);
+
+  --shadow-hover:
+    0 15px 35px rgba(43, 23, 18, 0.16);
+
+  --shadow-luxury:
+    0 8px 30px rgba(196, 154, 82, 0.15);
+
+
+  /* 6. BUTTONS */
+
+  --button-primary-bg: var(--color-primary);
+  --button-primary-text: #FFFFFF;
+
+  --button-accent-bg: var(--color-accent);
+  --button-accent-text: var(--color-primary);
+
+  --button-border: var(--color-accent);
+
+  --button-padding-y: 14px;
+  --button-padding-x: 28px;
+
+  --button-radius: 6px;
+
+
+  /* 7. CARDS */
+
+  --card-background: var(--color-surface);
+  --card-border: var(--color-border);
+  --card-radius: 12px;
+  --card-padding: 20px;
+  --card-shadow: var(--shadow-soft);
+
+
+  /* 8. INPUT FIELDS */
+
+  --input-background: #FFFFFF;
+  --input-border: #D8C8B6;
+  --input-text: var(--color-text-primary);
+  --input-radius: 6px;
+  --input-padding: 14px;
+
+
+  /* 9. LAYOUT */
+
+  --container-width: 1280px;
+  --header-height: 85px;
+
+  --section-padding:
+    80px 5%;
+
+
+  /* 10. TRANSITIONS */
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+}
+
+
+/* =========================================
+   GLOBAL STYLES
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  line-height: var(--line-height-tight);
+}
+
+h1 {
+  font-size: var(--font-size-hero);
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+}
+
+p {
+  color: var(--color-text-secondary);
+}
+
+
+/* =========================================
+   BUTTON COMPONENTS
+========================================= */
+
+.btn-primary {
+  background: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  padding: var(--button-padding-y) var(--button-padding-x);
+  border: 1px solid var(--button-primary-bg);
+  border-radius: var(--button-radius);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.btn-primary:hover {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  border-color: var(--color-accent);
+}
+
+.btn-gold {
+  background: var(--button-accent-bg);
+  color: var(--button-accent-text);
+  padding: var(--button-padding-y) var(--button-padding-x);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--button-radius);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.btn-gold:hover {
+  background: var(--color-primary);
+  color: #FFFFFF;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--button-border);
+  padding: var(--button-padding-y) var(--button-padding-x);
+  border-radius: var(--button-radius);
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.btn-outline:hover {
+  background: var(--color-primary);
+  color: #FFFFFF;
+}
+
+
+/* =========================================
+   PRODUCT CARDS
+========================================= */
+
+.product-card {
+  background: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  padding: var(--card-padding);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition-normal);
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.product-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+}
+
+.product-price {
+  color: var(--color-primary);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+}
+
+
+/* =========================================
+   INPUT FIELDS
+========================================= */
+
+input, textarea, select {
+  width: 100%;
+  background: var(--input-background);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: var(--input-radius);
+  padding: var(--input-padding);
+  font-family: var(--font-body);
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-accent);
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-2xl);
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.section-subtitle {
+  color: var(--color-text-secondary);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+  :root {
+    --font-size-hero: 40px;
+    --font-size-2xl: 30px;
+    --font-size-xl: 26px;
+
+    --section-padding: 50px 5%;
+    --header-height: 70px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  :root {
+    --font-size-hero: 34px;
+    --font-size-2xl: 26px;
+    --font-size-lg: 18px;
+  }
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+/* Example: Hero section */
+
+.hero-section {
+  background: var(--color-primary);
+  padding: var(--space-24) 5%;
+}
+
+.hero-section h1 {
+  color: var(--color-background);
+  font-family: var(--font-heading);
+}
+
+.hero-section p {
+  color: var(--color-text-light);
+}
+
+/* Example: Product section */
+
+.products-section {
+  background: var(--color-background);
+  padding: var(--section-padding);
+}
